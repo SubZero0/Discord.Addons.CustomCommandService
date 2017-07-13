@@ -1,10 +1,11 @@
 # Discord.Addons.CustomCommandService
 Now you can have custom parsers for different commands
 
-# How to use a custom parsers
-1) Add it to the CustomCommandService via `AddParser<CommandMarkerAttribute>(Parser)` or `AddParser(CommandMarkerAttribute, Parser)`
-2) Put your CommandMarkerAttribute in the command that you want your custom Parser
-3) Profit!
+# How to use custom parsers
+1) Change your `CommandService` to `CustomCommandService`
+2) Add your parser to the CustomCommandService with `AddParser<CommandMarkerAttribute>(Parser)` or `AddParser(CommandMarkerAttribute, Parser)`
+3) Add your CommandMarkerAttribute in the command that you want your custom Parser
+4) Profit!
 
 You can see an example in this repo. But it actually uses `CommandService.EnableCliStyleCommands();` to register it.
 
@@ -16,4 +17,4 @@ You can see an example in this repo. But it actually uses `CommandService.Enable
 You can look into `Discord.Addons.CliStyleCommand` to see how it's done.
 
 # How to use
-See the `Example`.
+See the Example in this repo.
