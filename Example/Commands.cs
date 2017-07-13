@@ -7,7 +7,7 @@ namespace Example
 {
     public class Commands : ModuleBase<SocketCommandContext>
     {
-        //CliStyle command with your CommandMarkerAttribute: CliStyle
+        //CliStyle command with our CommandMarkerAttribute: CliStyle
         [Command("test"), CliStyle]
         //ParamAlias is an special attribute for CliStyle commands, that enables aliases for your parameters
         public async Task Test([ParamAlias("t")] string test, int number, IGuildUser user, [Remainder] string rest = "")
