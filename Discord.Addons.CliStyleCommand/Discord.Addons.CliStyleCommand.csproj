@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.3</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Discord.Addons.CustomCommandService\Discord.Addons.CustomCommandService.csproj" />
+  </ItemGroup>
+
+</Project>
